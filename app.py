@@ -10,7 +10,7 @@ load_dotenv()
 api = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(
-    page_title="Lyzr IELTS Coaching Agent",
+    page_title="Lyzr MCQ Generator",
     layout="centered",  # or "wide"
     initial_sidebar_state="auto",
     page_icon="lyzr-logo-cut.png",
@@ -31,8 +31,8 @@ image = Image.open("lyzr-logo.png")
 st.image(image, width=150)
 
 # App title and introduction
-st.title("Lyzr IELTS Coaching Agent ")
-st.markdown("### Welcome to the Lyzr IELTS Coaching Agent!")
+st.title("Lyzr MCQ Generator")
+st.markdown("### Welcome to the Lyzr MCQ Generator!")
 st.markdown("Upload Your Topic and get Perfect Answers.")
 
 open_ai_text_completion_model = OpenAIModel(
